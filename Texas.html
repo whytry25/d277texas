@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styling..css">
+    <title>The State of Texas</title>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('emailAddress').value;
+            var confirmEmail = document.getElementById('cemailAddress').value;
+            var errorMessage = document.getElementById('emailError');
+            
+            if (email !== confirmEmail) {
+                errorMessage.style.display = 'block'; 
+                event.preventDefault(); 
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+</head>
+
+<Body>
+    <main>
+        <header>
+            <h1>The State of Texas</h1>
+            <nav>
+                <a href="CapitolofTexas.html" target="_blank">Capitol of Texas</a>
+                <a href="WichitaFalls.html" target="_blank">Wichita Falls</a>
+                <a href="FortWorth.html" target="_blank">Fort Worth</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Some info about the State of Texas</h2>
+            <p>The state of Texas is a great state to live in. It has beautiful grasslands and tons of agricultural opportunities.</p>
+            <p>The state of Texas has a great flower as well. That flower being the Bluebonnet.</p>
+            <p>Texas is also the second largest state in the United States. It covers about 268,5696 square miles.</p>
+            <p>Texas' major cities include: Austin, Houston, Dallas, San Antonio, and Fort worth. There are other "major" hubs in Texas, but these are most commonly known to outsiders.</p>
+            <img class="moveRight" src="download (1).png" alt="State of Texas symbol" width="250">
+            <p>As stated before Texas has many opportunities. More of those opportunities are Energy, especially oil and gas, Technology, with Austin being the biggest reason for this, Agriculture, and manufacturing.</p>
+            <p>Overall, Texas is a great place to either visit or live. Here are my top 3 reasons one would come to this state:
+                <ol>
+                    <li>Career growth. As stated before the tech and agriculture fields in this state provide great opportunity</li>
+                    <li>Diverse Culture. There are many different cities in this state that provide all types of different cultures</li>
+                    <li>Cost of living. Now this one varies between city to city, but overall I would say Texas is one of the most affordable states to live in.</li>
+                </ol>
+            </p>
+            <p>Here is also a table to provide just a little more information on what the populations look like between the "Major Hubs" here in Texas:</p>
+            <table id="brderdashed">
+                <caption>State of Texas city population chart</caption>
+                    <tr>
+                        <th>City</th>
+                        <th>Population</th>
+                        <th>Interesting landmark</th>
+                    </tr>
+                    <tr>
+                        <td>Austin</td>
+                        <td>974,447 </td>
+                        <td>State Capitol building</td>
+                    </tr>
+                    <tr>
+                        <td>Houston</td>
+                        <td>2,303,000</td>
+                        <td>NASA Space Center</td>
+                    </tr>
+                    <tr>
+                        <td>Dallas</td>
+                        <td>1,300,000</td>
+                        <td>JFK trolley tour and building</td>
+                    </tr>
+                    <tr>
+                        <td>San Antonio</td>
+                        <td>1,473,000</td>
+                        <td>The Alamo</td>
+                    </tr>
+                    <tr>
+                        <td>Fort Worth</td>
+                        <td>956,709</td>
+                        <td>Fort Worth stock yards</td>
+                    </tr>
+            </table>
+        </section>
+    <aside>A fun fact about the state of Texas is that it actually used to be its own nation way back in 1836. This lasted all the way to 1845. This was known as the republic of Texas. </aside>
+    </main>
+
+</Body>
+<footer>
+<p>If you would like to join our emailing list please fill out the information below. Thanks!</p>
+<div>    
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name">
+</div>
+<div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name">
+</div>
+<form id="emailForm">
+<div>
+    <label for="emailAddress">Email Address:</label>
+    <input type="text" id="emailAddress" name="emailAddress" placeholder="Enter Your Email Address">
+</div>
+<div>
+    <label for="cemailAddress">Confirm Email Address:</label>
+    <input type="text" id="cemailAddress" name="cemailAddress" placeholder="Enter Your Email Address">
+</div>
+<div id="emailError" style="display: none;">Emails do not match!</div>
+</form>
+<div>
+<p><label for="questions">Enter any questions here:</label></p>
+<textarea id="questions" name="questions"></textarea>
+</div>
+<div>
+    <input type="submit">
+</div>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</footer>
